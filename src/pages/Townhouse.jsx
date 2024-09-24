@@ -2,6 +2,8 @@ import './Townhouse.css';
 import { House, Menu } from 'lucide-react';
 import '../components/Header.css'
 
+import logo from '../../public/logo.png'
+
 import { Link, useLocation } from 'react-router-dom';
 
 const Townhouse = () => {
@@ -11,7 +13,7 @@ const Townhouse = () => {
     <>
     <header className="header">
         <nav className="header__navbar">
-          <a href="/"><img src="logo.png" className='nav__rsp-logo'/></a>
+          <a href="/"><img src={ logo } className='nav__rsp-logo'/></a>
 
           <div className='regular__links'>
             <Link to="/objects" className={"/objects" === pathname ? "nav_link-active" : "nav_link"}>Объекты</Link>
