@@ -3,7 +3,7 @@ import { House, Menu } from 'lucide-react';
 import '../components/Header.css'
 
 import logo from '../../public/logo.png'
-import object from '../../public/object__2.png'
+import object from '../../public/object__1.png'
 
 import { Link, useLocation } from 'react-router-dom';
 
