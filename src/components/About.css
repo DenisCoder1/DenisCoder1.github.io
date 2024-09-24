@@ -1,0 +1,49 @@
+.about_p p{
+    padding: 3% 4%;
+    text-align: start;
+    font-size: clamp(1.1em, 2.5vw, 1.6em);
+    font-weight: 400;
+}
+
+.about__title {
+    margin-top: 15vh;
+}
+
+.about__advantages{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin: 0 4%;
+}
+
+.container {
+    background-color: #299FFF;
+    color: white;
+    height: 250px;
+    width: 350px;
+    flex-grow: 1;
+}
+
+.container_content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    font-family: "Montserrat"
+}
+
+.container-text{
+    font-size: 22px;
+    font-weight: 450;
+}
+
+.check_svg, .key_svg, .brick_svg, .calendar_svg, .smile_svg {
+    margin-bottom: 13px;
+    height: 80px;
+    width: 100px;
+}
+

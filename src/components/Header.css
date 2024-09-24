@@ -1,0 +1,128 @@
+#root {
+  min-height: 100vh;
+  min-width: 100vw;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+a{
+  color: black;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #F1F1F1;
+  filter: drop-shadow(0 0 1em rgba(0, 0, 0, 0.05));
+  font-weight: 450;
+  z-index: 10000;
+}
+
+.header__navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1% 1%;
+  border-bottom: 2px solid hsla(0, 0%, 50%, 0.454);
+  position: relative;
+  height: clamp(80px, 100px, 100px);
+}
+
+.nav__rsp-logo {
+  height: auto;
+  width: clamp(3.5em, 5vw, 4.5em);
+  position: absolute;
+  top: 12%;
+  left: 7%;
+
+  transition: filter .3s ease-out;
+  
+  &:hover{
+    filter: drop-shadow(0 0 2em hsla(207, 100%, 58%, 0.35))
+  }
+}
+
+.regular__links > a{
+  position: relative;
+  width: max-content;
+  transition: color .3s ease;
+
+  &:hover{
+    color: #17598f;
+  }
+}
+
+.nav_link-active {
+  color: #17598f;
+}
+
+.nav_link-active::after {
+  content: '';
+  position: absolute;
+  height: 2.3px;
+  width: 100%;
+  opacity: 1;
+  background: #299FFF;
+  top: 100%;
+  left: 0;
+}
+
+.regular__links > .nav_link::after {
+    content: '';
+    position: absolute;
+    height: 2.3px;
+    width: 0%;
+    opacity: 0;
+    background: #299FFF;
+    top: 100%;
+    left: 0;
+    transition: width .4s ease, opacity .3s;
+}
+
+.regular__links > .nav_link:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
+.nav__phone-number{
+  font-size: 26px;
+  transition: filter .3s ease-out, color .2s;
+
+  &:hover{
+    filter: drop-shadow(0 0 1em hsla(207, 100%, 58%, .5));
+    color: #236ba6
+  }
+}
+
+.menu_burger-btn {
+  display: none;
+  padding-right: 15px;
+  cursor: pointer;
+  transition: filter .3s ease-out;
+
+  &:hover {
+    filter: drop-shadow(0 0 1em hsla(207, 100%, 60%, 0.5));
+  }
+}
+
+.menu_burger-btn a{
+  margin: 0;
+}
+  
+@media (max-width: 1150px) {
+  .regular__links, .nav__phone-number {
+    display: none;
+  }
+  
+  .menu_burger-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 3%;
+  }
+}

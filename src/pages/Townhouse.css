@@ -1,0 +1,98 @@
+.townhouse {
+    padding-top: 127.59px;
+}
+
+.info_part {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 6%;
+    margin-left: auto;
+}
+
+.info_part h1{
+    width: max-content;
+    text-align: start;
+    width: fit-content;
+    font-size: clamp(1.3em, 3vw + 2rem, 5em);
+    margin: 4%;
+}
+
+.info_part p{
+    opacity: .7;
+    width: max-content;
+    text-align: start;
+    font-size: clamp(.7em, 1vw + 1rem, 3em);
+    margin-bottom: 1%;
+    margin-top: 0;
+}
+
+.house_svg {
+    height: clamp(50px, 11vw + 2rem, 100px);
+    width: auto;
+}
+
+.img_part {
+    width: 50vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 127px;
+}
+
+.img_part img{
+    width: 100%;
+    z-index: -1;
+
+    position: absolute;
+    top: 0;
+}
+
+
+
+@media (max-width: 1700px) {
+    .img_part {
+        width: 100vw;
+    }
+
+    .img_part img{
+        width: 67.5%;
+    }
+    
+    .info_part {
+        width: 100vw;
+        margin-top: 60%;
+        margin-bottom: 5%;
+    }
+}   
+
+@media (max-width: 1305px) {
+    .img_part {
+       top: 120px;
+    }
+}
+
+@media (max-width: 1028px) {
+    .img_part img {
+        width: 100%;
+    }
+
+    .info_part {
+        margin-top: 80%;
+    }
+}
+
+@media (max-width: 884px) {
+    .img_part {
+        top: 100px
+    }
+}

@@ -1,0 +1,63 @@
+.pages-div .objects__title {
+    margin-top: 20vh;
+}
+
+.contacts__div .contacts__title {
+    margin-top: 20vh;
+}
+
+.about__div .about__title {
+    margin-top: 20vh;
+}
+
+.objects {
+    margin-bottom: 5vh;
+}
+
+.about__div .about__advantages{
+    padding-bottom: 165.193px;
+}
+
+.link_back {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    top: 20%;
+    left: 1%;
+    color: rgba(0, 0, 0, 0.75);
+    z-index: 999;
+    transition: .3s ease;
+    
+    &:hover .arrow_svg{
+        transform: translateX(-3px);
+    }
+}
+
+.arrow_svg {
+    height: 58px;
+    width: auto;
+
+    transition: .3s ease;
+}
+
+.pages-div {
+    overflow: hidden;
+}
+
+@media (max-width: 1272px) {
+    .link_back h2{
+        display: none;
+    }
+
+    .link_back {
+        top: 21.8%;
+        left: 1%;
+    }
+}
+
+@media (max-width: 874px) {
+    .link_back {
+        display: none;
+    }
+}

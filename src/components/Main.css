@@ -1,0 +1,55 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    color: white;
+}
+
+.main > h1 {
+    text-shadow: 0 0 2rem rgba(0, 0, 0, .6);
+    margin: 1% 0px 2% 0px;   
+    font-size: clamp(1.55em, 8vw, 3.2em);
+}
+
+.main > h2 {
+    text-shadow: 0 0 2rem rgba(0, 0, 0, .6);
+    font-size: clamp(1em, 5.3vw, 1.5em);
+}
+
+.main > p {
+    text-shadow: 0 0 2rem rgba(0, 0, 0, .6);
+    font-size: clamp(.8em, 3vw, 1.05em);
+}
+
+.main > p {
+    position: relative;
+}
+
+.main > p::after {
+    content: '';
+    position: absolute;
+    height: 2.6px;
+    width: 100%;
+    opacity: 1;
+    background: #299FFF;
+    top: 25px;
+    left: 0;
+}
+
+.main__bg {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -100;
+    filter: brightness(.75);
+}
