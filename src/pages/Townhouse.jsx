@@ -2,7 +2,7 @@ import './Townhouse.css';
 import { House } from 'lucide-react';
 import '../components/Header.css'
 
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Townhouse = () => {
   const { pathname } = useLocation();
