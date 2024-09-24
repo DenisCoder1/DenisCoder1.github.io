@@ -113,7 +113,7 @@
         position: relative;
         margin-top: 15px;
         margin-bottom: 6px;
-        margin-left: 100px;
+        margin-left: 30px;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
@@ -153,18 +153,5 @@
 
     .objects__image p {
         font-size: .7em;
-    }
-}
-
-
-
-@keyframes fade {
-    0% {
-
-    }
-
-    100%{
-        opacity: 1;
-        transform: translateY(0%);
     }
 }

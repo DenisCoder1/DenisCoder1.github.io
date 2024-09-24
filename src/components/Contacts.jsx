@@ -21,11 +21,11 @@ export default function Contacts() {
 
                         <div className='contacts-wrapper'>
                             <div className='contacts__icon'>
-                                <a href=''> <img src={telegram_logo} alt='Telegram' /> </a>
+                                <a href='https://t.me/d772519'> <img src={telegram_logo} alt='Telegram' /> </a>
                             </div>
 
                             <div className='contacts__icon'>
-                                <a href=''> <img src={whatsapp_logo} alt='WhatsApp' /> </a>
+                                <a href='https://wa.me/79525810817'> <img src={whatsapp_logo} alt='WhatsApp' /> </a>
                             </div>
                         </div>
 

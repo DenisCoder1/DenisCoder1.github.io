@@ -96,7 +96,7 @@
 
 .map {
     border: 3.5px solid rgb(215, 215, 215);
-    height: 450px;
+    height: 50vh;
     width: 90vw;
     margin-top: 5vh; 
 }
@@ -105,5 +105,11 @@
 @media (max-width: 1050px) {
     .contacts__phone > h2 {
         font-size: 6vw;
+    }
+}
+
+@media (max-width: 578px) {
+    .map {
+        height: 40vh;
     }
 }
