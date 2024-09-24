@@ -3,6 +3,7 @@ import { House, Menu } from 'lucide-react';
 import '../components/Header.css'
 
 import logo from '../../public/logo.png'
+import object from '../../public/object__2.png'
 
 import { Link, useLocation } from 'react-router-dom';
 
@@ -41,7 +42,7 @@ const Townhouse = () => {
           </div>
 
           <div className="img_part">
-              <img src='../../public/object__2.png'/>
+              <img src={ object }/>
           </div>
         </div>
       </div>
