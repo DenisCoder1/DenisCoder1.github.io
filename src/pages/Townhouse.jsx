@@ -1,11 +1,9 @@
 import './Townhouse.css';
 import { House } from 'lucide-react';
-import Header from '../components/Header.jsx'
 
 const Townhouse = () => {
   return (
     <>
-    <Header />
       <div className='townhouse'>
       <div className='intro'>
           <div className="info_part">
@@ -15,7 +13,7 @@ const Townhouse = () => {
           </div>
 
           <div className="img_part">
-              <img src='../../public/object__2.png'/>
+              <img src='object__2.png'/>
           </div>
         </div>
       </div>
