@@ -2,7 +2,7 @@
   "name": "my-react-app",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://DenisCoder1.github.io/DenisCoder1.github.io",
+  "homepage": "https://DenisCoder1.github.io",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
