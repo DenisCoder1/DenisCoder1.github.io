@@ -5,6 +5,8 @@ import '../components/Header.css'
 import { Link } from 'react-router-dom';
 
 const Townhouse = () => {
+  const { pathname } = useLocation();
+
   return (
     <>
     <header className="header">
