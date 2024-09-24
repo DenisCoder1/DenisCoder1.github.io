@@ -20,7 +20,7 @@ function Header() {
             <a href="/contacts" className={"/contacts" === pathname ? "nav_link-active" : "nav_link"}>Контакты и связь</a>
           </div>
 
-          <Link to="/" className='nav__phone-number'>+7 (952) 581-08-17</Link>
+          <Link to="/contacts" className='nav__phone-number'>+7 (952) 581-08-17</Link>
           
           <div className='menu_burger-btn'>
             <Link to='/menu' ><Menu size={64} className='burger_menu' /></Link>
