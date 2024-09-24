@@ -9,7 +9,7 @@ const Townhouse = () => {
     <>
     <header className="header">
         <nav className="header__navbar">
-          <a href="/"><img src="logo.png" className='nav__rsp-logo'/></a>
+          <a href="/"><img src="../../public/logo.png" className='nav__rsp-logo'/></a>
 
           <div className='regular__links'>
             <Link to="/objects" className={"/objects" === pathname ? "nav_link-active" : "nav_link"}>Объекты</Link>
@@ -37,7 +37,7 @@ const Townhouse = () => {
           </div>
 
           <div className="img_part">
-              <img src='object__2.png'/>
+              <img src='../../public/object__2.png'/>
           </div>
         </div>
       </div>
