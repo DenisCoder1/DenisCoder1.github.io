@@ -12,7 +12,7 @@ function Header() {
     <>
       <header className="header">
         <nav className="header__navbar">
-          <a href="/"> <img src="logo.png" className='nav__rsp-logo'/> </a>
+          <a href="/"><img src="logo.png" className='nav__rsp-logo'/></a>
 
           <div className='regular__links'>
             <Link to="/objects" className={"/objects" === pathname ? "nav_link-active" : "nav_link"}>Объекты</Link>
