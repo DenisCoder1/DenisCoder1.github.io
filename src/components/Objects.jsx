@@ -1,6 +1,8 @@
 import './Objects.css'
 import { Link } from 'react-router-dom';
 
+import Townhouse from '../pages/Townhouse.jsx';
+
 function Objects() {
     return (
     <>
@@ -8,7 +10,7 @@ function Objects() {
         <div className='objects'>
             
             <div className='objects__image'>
-                <a href="/objects/townhouse"><img src='object__1.png'/></a>
+                <a href="/objects/townhouse" element=<Townhouse /> ><img src='object__1.png'/></a>
                 <h2>3-х этажный таунхаус бизнес-класса</h2>
                 <p>ул. Нижненольная, 13</p>
             </div>
