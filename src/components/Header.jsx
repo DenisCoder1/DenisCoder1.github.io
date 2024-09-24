@@ -17,7 +17,7 @@ function Header() {
           <div className='regular__links'>
             <Link to="/objects" className={"/objects" === pathname ? "nav_link-active" : "nav_link"}>Объекты</Link>
             <Link to="/about" className={"/about" === pathname ? "nav_link-active" : "nav_link"}>О компании</Link>
-            <a href="/contacts" className={"/contacts" === pathname ? "nav_link-active" : "nav_link"}>Контакты и связь</a>
+            <Link to="/contacts" className={"/contacts" === pathname ? "nav_link-active" : "nav_link"}>Контакты и связь</Link>
           </div>
 
           <Link to="/" className='nav__phone-number'>+7 (952) 581-08-17</Link>
