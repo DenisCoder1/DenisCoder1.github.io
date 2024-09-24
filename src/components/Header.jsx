@@ -3,6 +3,8 @@ import { useLocation } from 'react-router-dom';
 import './Header.css'
 import { Menu } from 'lucide-react';
 
+import { logo } from '../../public/logo.png'
+
 import { Link } from "react-router-dom"
 
 function Header() {
@@ -12,7 +14,7 @@ function Header() {
     <>
       <header className="header">
         <nav className="header__navbar">
-          <a href="/"> <img src="../public/logo.png" className='nav__rsp-logo'/> </a>
+          <a href="/"> <img src={logo} className='nav__rsp-logo'/> </a>
 
           <div className='regular__links'>
             <Link to="/objects" className={"/objects" === pathname ? "nav_link-active" : "nav_link"}>Объекты</Link>
