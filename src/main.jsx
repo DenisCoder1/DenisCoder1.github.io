@@ -10,11 +10,11 @@ import Townhouse from './pages/Townhouse.jsx'
 
 import ErrorPage from './pages/ErrorPage.jsx'
 
-import { createBrowserRouter, Router, RouterProvider } from 'react-router-dom'
+import { createHashRouter, Router, RouterProvider } from 'react-router-dom'
 
 import './index.css'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <MainPage />,
