@@ -1,11 +1,31 @@
 import './Townhouse.css';
 import { House } from 'lucide-react';
-import Header from '../components/Header.jsx'
+import '../components/Header.css'
 
 const Townhouse = () => {
   return (
     <>
-    <Header />
+    <header className="header">
+        <nav className="header__navbar">
+          <a href="/"><img src="logo.png" className='nav__rsp-logo'/></a>
+
+          <div className='regular__links'>
+            <Link to="/objects" className={"/objects" === pathname ? "nav_link-active" : "nav_link"}>Объекты</Link>
+            <Link to="/about" className={"/about" === pathname ? "nav_link-active" : "nav_link"}>О компании</Link>
+            <a href="/contacts" className={"/contacts" === pathname ? "nav_link-active" : "nav_link"}>Контакты и связь</a>
+          </div>
+
+          <Link to="/contacts" className='nav__phone-number'>+7 (952) 581-08-17</Link>
+          
+          <div className='menu_burger-btn'>
+            <Link to='/menu' ><Menu size={64} className='burger_menu' /></Link>
+          </div>
+          
+          </nav>
+        
+        
+      </header>
+
       <div className='townhouse'>
       <div className='intro'>
           <div className="info_part">
